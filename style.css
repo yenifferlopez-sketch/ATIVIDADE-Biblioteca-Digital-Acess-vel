@@ -1,0 +1,262 @@
+/* Paleta calma, previsível e com alto contraste */
+:root {
+  --bg-pagina: #F8FAFC;
+  --bg-cartao: #FFFFFF;
+  --cor-primaria: #1E3A8A;
+  --cor-primaria-escura: #172554;
+  --texto-principal: #0F172A;
+  --texto-secundario: #334155;
+  --borda-suave: #CBD5E1;
+  --destaque-suave: #EFF6FF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--bg-pagina);
+  color: var(--texto-principal);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: var(--cor-primaria);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 36px 0;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cabecalho p {
+  font-size: 1.1rem;
+  color: #E2E8F0;
+}
+
+/* Menu de Navegação (Flexbox) */
+.menu-navegacao {
+  background-color: #0F172A;
+  padding: 14px 0;
+  margin-bottom: 36px;
+}
+
+.menu-lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.menu-lista a {
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+}
+
+.menu-lista a:hover {
+  background-color: var(--cor-primaria);
+}
+
+.menu-lista a:focus,
+.btn-detalhes:focus {
+  outline: 3px solid #F59E0B;
+  outline-offset: 2px;
+}
+
+/* Seções Gerais */
+.secao {
+  margin-bottom: 48px;
+}
+
+.titulo-secao {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 6px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--cor-primaria);
+}
+
+.descricao-secao {
+  color: var(--texto-secundario);
+  margin-bottom: 24px;
+}
+
+/* Área de Categorias (Grid) */
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card-categoria {
+  background-color: var(--bg-cartao);
+  border: 2px solid var(--borda-suave);
+  border-left: 6px solid var(--cor-primaria);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.icone-categoria {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.card-categoria h3 {
+  font-size: 1.15rem;
+  color: var(--texto-principal);
+  margin-bottom: 4px;
+}
+
+.card-categoria p {
+  font-size: 0.95rem;
+  color: var(--texto-secundario);
+}
+
+/* Área de Cards de Livros (Grid + Flex interno) */
+.grid-livros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card-livro {
+  background-color: var(--bg-cartao);
+  border: 2px solid var(--borda-suave);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.capa-livro {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid var(--borda-suave);
+}
+
+.conteudo-livro {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tag-categoria {
+  align-self: flex-start;
+  background-color: var(--destaque-suave);
+  color: var(--cor-primaria);
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #BFDBFE;
+  margin-bottom: 10px;
+}
+
+.conteudo-livro h3 {
+  font-size: 1.2rem;
+  color: var(--texto-principal);
+  margin-bottom: 6px;
+}
+
+.autor {
+  font-size: 0.95rem;
+  color: var(--texto-secundario);
+  margin-bottom: 10px;
+}
+
+.resumo {
+  font-size: 0.98rem;
+  color: var(--texto-secundario);
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+/* Botões */
+.btn-detalhes {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-detalhes:hover {
+  background-color: var(--cor-primaria-escura);
+}
+
+/* Seção Sobre o Projeto */
+.card-sobre {
+  background-color: var(--bg-cartao);
+  border: 2px solid var(--borda-suave);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.card-sobre p + p {
+  margin-top: 12px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #0F172A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 0.95rem;
+}
+
+/* Responsividade para Tablets e Celulares */
+@media (max-width: 900px) {
+  .grid-categorias,
+  .grid-livros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.6rem;
+  }
+
+  .menu-lista {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu-lista a {
+    text-align: center;
+  }
+
+  .grid-categorias,
+  .grid-livros {
+    grid-template-columns: 1fr;
+  }
+}
