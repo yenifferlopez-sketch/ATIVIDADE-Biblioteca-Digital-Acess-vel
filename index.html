@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Digital Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Início -->
+  <header id="inicio" class="cabecalho">
+    <div class="container">
+      <h1>📚 Biblioteca Digital Acessível</h1>
+      <p>Encontre materiais de leitura e estudo de maneira simples e organizada.</p>
+    </div>
+  </header>
+
+  <!-- Menu de Navegação -->
+  <nav class="menu-navegacao" aria-label="Menu principal">
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#livros">Livros</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#sobre">Sobre o projeto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+
+    <!-- Seção de Categorias -->
+    <section id="categorias" class="secao" aria-labelledby="titulo-categorias">
+      <h2 id="titulo-categorias" class="titulo-secao">📂 Categorias de Estudo</h2>
+      <p class="descricao-secao">Explore os conteúdos organizados por área do conhecimento.</p>
+
+      <div class="grid-categorias">
+        <div class="card-categoria">
+          <span class="icone-categoria" aria-hidden="true">💻</span>
+          <h3>Tecnologia</h3>
+          <p>Programação, lógica e informática.</p>
+        </div>
+
+        <div class="card-categoria">
+          <span class="icone-categoria" aria-hidden="true">📖</span>
+          <h3>Literatura</h3>
+          <p>Contos, romances e leitura criativa.</p>
+        </div>
+
+        <div class="card-categoria">
+          <span class="icone-categoria" aria-hidden="true">🔬</span>
+          <h3>Ciências</h3>
+          <p>Biologia, física, química e astronomia.</p>
+        </div>
+
+        <div class="card-categoria">
+          <span class="icone-categoria" aria-hidden="true">📐</span>
+          <h3>Matemática</h3>
+          <p>Cálculos, geometria e raciocínio lógico.</p>
+        </div>
+
+        <div class="card-categoria">
+          <span class="icone-categoria" aria-hidden="true">🏛️</span>
+          <h3>História</h3>
+          <p>Sociedade, cultura e fatos históricos.</p>
+        </div>
+
+        <div class="card-categoria">
+          <span class="icone-categoria" aria-hidden="true">🌱</span>
+          <h3>Desenvolvimento pessoal</h3>
+          <p>Organização, foco e hábitos de estudo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Livros -->
+    <section id="livros" class="secao" aria-labelledby="titulo-livros">
+      <h2 id="titulo-livros" class="titulo-secao">📘 Livros e Materiais de Estudo</h2>
+      <p class="descricao-secao">Selecione um material abaixo para consultar suas informações.</p>
+
+      <div class="grid-livros">
+
+        <!-- Livro 1 -->
+        <article class="card-livro">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 160'><rect width='300' height='160' fill='%231E3A8A'/><rect x='20' y='20' width='260' height='120' rx='8' fill='%232563EB'/><text x='150' y='88' font-family='Arial' font-size='36' fill='%23FFFFFF' text-anchor='middle'>&lt;/&gt;</text></svg>"
+            alt="Capa ilustrativa azul do livro Introdução à Lógica de Programação com símbolo de código"
+            class="capa-livro"
+          >
+          <div class="conteudo-livro">
+            <span class="tag-categoria">💻 Tecnologia</span>
+            <h3>Introdução à Lógica de Programação</h3>
+            <p class="autor"><strong>Autor:</strong> Carlos Mendes</p>
+            <p class="resumo">Guia prático com exemplos passo a passo para iniciar nos algoritmos e na criação de sistemas.</p>
+            <button type="button" class="btn-detalhes">Ver detalhes</button>
+          </div>
+        </article>
+
+        <!-- Livro 2 -->
+        <article class="card-livro">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 160'><rect width='300' height='160' fill='%23065F46'/><rect x='20' y='20' width='260' height='120' rx='8' fill='%23059669'/><circle cx='150' cy='80' r='32' fill='%23D1FAE5'/></svg>"
+            alt="Capa ilustrativa verde do livro Contos da Cidade Tranquila com círculo claro central"
+            class="capa-livro"
+          >
+          <div class="conteudo-livro">
+            <span class="tag-categoria">📖 Literatura</span>
+            <h3>Contos da Cidade Tranquila</h3>
+            <p class="autor"><strong>Autora:</strong> Mariana Souza</p>
+            <p class="resumo">Coletânea de histórias curtas sobre amizade, cotidiano e descobertas na juventude.</p>
+            <button type="button" class="btn-detalhes">Ver detalhes</button>
+          </div>
+        </article>
+
+        <!-- Livro 3 -->
+        <article class="card-livro">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 160'><rect width='300' height='160' fill='%23312E81'/><circle cx='150' cy='80' r='36' fill='%23FBBF24'/><circle cx='215' cy='50' r='12' fill='%2393C5FD'/></svg>"
+            alt="Capa ilustrativa azul-escura do livro O Universo e o Sistema Solar com representação do Sol e de um planeta"
+            class="capa-livro"
+          >
+          <div class="conteudo-livro">
+            <span class="tag-categoria">🔬 Ciências</span>
+            <h3>O Universo e o Sistema Solar</h3>
+            <p class="autor"><strong>Autor:</strong> Prof. Roberto Lima</p>
+            <p class="resumo">Explicação clara e visual sobre os planetas, estrelas e principais fenômenos astronômicos.</p>
+            <button type="button" class="btn-detalhes">Ver detalhes</button>
+          </div>
+        </article>
+
+        <!-- Livro 4 -->
+        <article class="card-livro">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 160'><rect width='300' height='160' fill='%230F172A'/><polygon points='150,30 210,130 90,130' fill='%2338BDF8'/></svg>"
+            alt="Capa ilustrativa escura do livro Matemática Básica sem Mistérios com um triângulo azul"
+            class="capa-livro"
+          >
+          <div class="conteudo-livro">
+            <span class="tag-categoria">📐 Matemática</span>
+            <h3>Matemática Básica sem Mistérios</h3>
+            <p class="autor"><strong>Autora:</strong> Ana Paula Alves</p>
+            <p class="resumo">Resumos diretos para compreender frações, porcentagens, geometria e equações do dia a dia.</p>
+            <button type="button" class="btn-detalhes">Ver detalhes</button>
+          </div>
+        </article>
+
+        <!-- Livro 5 -->
+        <article class="card-livro">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 160'><rect width='300' height='160' fill='%2378350F'/><rect x='75' y='35' width='150' height='90' rx='6' fill='%23FDE68A'/></svg>"
+            alt="Capa ilustrativa marrom do livro História do Brasil em Capítulos Curtos com pergaminho dourado"
+            class="capa-livro"
+          >
+          <div class="conteudo-livro">
+            <span class="tag-categoria">🏛️ História</span>
+            <h3>História do Brasil em Capítulos Curtos</h3>
+            <p class="autor"><strong>Autor:</strong> Lucas Ferreira</p>
+            <p class="resumo">Linha do tempo objetiva com os principais períodos e acontecimentos históricos do país.</p>
+            <button type="button" class="btn-detalhes">Ver detalhes</button>
+          </div>
+        </article>
+
+        <!-- Livro 6 -->
+        <article class="card-livro">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 160'><rect width='300' height='160' fill='%2314532D'/><rect x='110' y='35' width='80' height='90' rx='40' fill='%2386EFAC'/></svg>"
+            alt="Capa ilustrativa verde-escura do livro Organização e Hábitos de Estudo com forma arredondada verde-clara"
+            class="capa-livro"
+          >
+          <div class="conteudo-livro">
+            <span class="tag-categoria">🌱 Desenvolvimento pessoal</span>
+            <h3>Organização e Hábitos de Estudo</h3>
+            <p class="autor"><strong>Autora:</strong> Beatriz Rocha</p>
+            <p class="resumo">Estratégias simples para montar uma rotina equilibrada, manter o foco e estudar sem sobrecarga.</p>
+            <button type="button" class="btn-detalhes">Ver detalhes</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Seção Sobre o Projeto -->
+    <section id="sobre" class="secao card-sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre" class="titulo-secao">ℹ️ Sobre o Projeto</h2>
+      <p>
+        A <strong>Biblioteca Digital Acessível</strong> foi desenvolvida para reunir materiais educativos em uma interface previsível, limpa e fácil de navegar.
+      </p>
+      <p>
+        O layout evita excesso de estímulos visuais, utiliza alto contraste, tipografia legível e organização clara por categorias para atender diferentes perfis de estudantes.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Biblioteca Digital Acessível • Projeto Educacional em HTML5 e CSS3 (2026)</p>
+    </div>
+  </footer>
+
+</body>
+</html>
